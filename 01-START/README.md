@@ -1,62 +1,50 @@
-# Doctype
+# link
+CSS 및 JS 연결해보자.
 
-## 1. 시작하기
-VSCODE에서 프로젝트 생성
-
-> 폴더 생성 후 `ctrl` + `k` + `o`로 폴더 연다
-
-## 2. HTML 파일 생성
-> `index.html` 생성 한다.
-
-## 3. 입력
-> `index.html` 내에 `i` 입력하면 자동 완성 뜨는데 그대로 `Enter`
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-```
-
-## 4. 구조
-
-### HTML 버전
-```html
-<!DOCTYPE html>
-```
-
-* HTML5 버전 나타냄
-* 예를 들어 이전 버전인 XHTML의 경우 `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Trans ...`와 같이 나오는데 알 필요 없음
-
-### 문서 범위
-```html
-<html lang="en">
-...
-</html>
-```
-* `lang="en"`은 기본 언어로 한번씩 번역 추천 같은 거 뜨는 것처럼 언어 인식함
-
-### 문서 정보
-```html
-<head>
-    <meta charset="UTF-8"> <!-- 문자 인코딩 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 시작 사이즈: viewport 기준으로 width가 디바이스 폭의 1.0배 -->
-    <title>Document</title> <!-- 브라우저 최상단 웹 페이지 제목 -->
-</head>
-```
-* 보이지는 않으나 웹 브라우저가 해석해야할 각종 정보를 넣음
-
-### 문서 구조
+## 1. div 태그
+`<body>` 태그 내 아래 작성하여 `Go Live`로 확인해보자.
 ```html
 <body>
-...
+  <div>Hello world!</div>
 </body>
 ```
-* 실제 보여질 문서의 구조
+
+## 2. CSS 작성
+> 프로젝트 디렉토리 내 `main.css` 생성.
+
+아래 입력.
+```css
+div {
+  color: red;
+  font-size:  100px;
+}
+```
+하지만 아무 변환 없음.
+
+## 3. CSS 연결
+> `<head>` 태그 내에 `link` 입력 후 `Enter`
+
+아래 입력.
+```html
+<link rel="stylesheet" href="./main.css">
+```
+`Go Live` 확인 시 CSS 속성 변한다.
+
+## 4. JS 연결
+> 프로젝트 디렉토리 내 `main.js` 생성.
+
+아래 입력.
+```javascript
+console.log('삼성 파운드리!');
+```
+
+`<head>` 태그 내에 아래 입력.
+```html
+<link rel="stylesheet" href="./main.css">
+```
+
+`Go Live` 웹 페이지에서 `개발자 도구` 들어 간다.
+
+> `ctrl + i` 혹은 `F12`
+
+`콘솔`에 들어가면 `삼성 파운드리!` 적혀있음.
