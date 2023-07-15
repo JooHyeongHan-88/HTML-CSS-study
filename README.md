@@ -1,13 +1,8 @@
 # image
-이미지 삽입
+이미지 삽입.
 
-> 폴더 정리하고 `main.css`, `main.js` 파일 옮김
-```html
-<link rel="stylesheet" href="./css/main.css">
-<script src="./js/main.js"></script>
-```
 
-## 1. 이미지 태그
+## 1. img 태그
 `<body>` 태그 내에 `image` 입력 후 `Enter`
 아래 입력
 ```html
