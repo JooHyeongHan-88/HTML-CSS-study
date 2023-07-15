@@ -10,9 +10,7 @@ CSS 및 JS 연결해보자.
 ```
 
 ## 2. CSS 작성
-> 프로젝트 디렉토리 내 `main.css` 생성.
-
-아래 입력.
+프로젝트 디렉토리 내 `main.css` 생성 후 아래 입력 및 저장.
 ```css
 div {
   color: red;
@@ -22,9 +20,7 @@ div {
 하지만 아무 변환 없음.
 
 ## 3. CSS 연결
-> `<head>` 태그 내에 `link` 입력 후 `Enter`
-
-아래 입력.
+`<head>` 태그 내에 `link` 입력 후 `Enter`하고 아래 입력 및 저장.
 ```html
 <link rel="stylesheet" href="./main.css">
 ```
@@ -33,9 +29,7 @@ div {
 > 외부 파일 연결하지 않고 `<head>` 태그 내에 `<style>` 태그 작성하여 CSS 스타일 코드 적용 가능.
 
 ## 4. JS 연결
-> 프로젝트 디렉토리 내 `main.js` 생성.
-
-아래 입력.
+프로젝트 디렉토리 내 `main.js` 생성 후 아래 입력 및 저장.
 ```javascript
 console.log('삼성 파운드리!');
 ```
