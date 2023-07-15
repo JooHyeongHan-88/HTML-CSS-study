@@ -36,7 +36,7 @@ console.log('삼성 파운드리!');
 
 `<head>` 태그 내에 아래 입력.
 ```html
-<link rel="stylesheet" href="./main.css">
+<script src="./main.js"></script>
 ```
 
 `Go Live` 웹 페이지에서 `개발자 도구` 들어 간다.
