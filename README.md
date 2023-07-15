@@ -11,9 +11,7 @@
 > * 프로젝트 내부 경로로도 가능.
 
 ## 2. 라우팅
-> 프로젝트 폴더 내 `about` 폴더 생성 후 내부에 `index.html` 생성.
-
-최상위 디렉토리 내 `index.html`에 아래 입력 후 확인해보자.
+프로젝트 폴더 내 `about` 폴더 생성 후 내부에 `index.html` 생성. 최상위 디렉토리 `index.html`에 아래 입력 후 렌더링 확인해보자.
 ```html
 <a href="./about">about</a>
 ```
