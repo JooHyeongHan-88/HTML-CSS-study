@@ -1,22 +1,37 @@
-# routing
-하이퍼링크 걸기와 라우팅
-
-## 1. 하이퍼링크
-`<body>` 태그 내에 `a` 입력 후 `Enter`
-아래 입력
+# style initialization
+`<body>` 태그 내용 다 삭제하고 `<div>` 태그를 넣은 다음
 ```html
-<a href="https://naver.com">NAVER</a>
+<body>
+  <div></div>
+</body>
 ```
-> * `href` 속성 내에 주소 입력.
-> * 프로젝트 내부 경로로도 가능.
+`css/main.css` 파일 내 `div` 선택자를 다음과 같이 수정해보자.
+```css
+div {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+}
+```
+그러면 개발자 도구에서 확인 가능하지만 오렌지 박스가 마진을 가진 채 위치해 있다.
 
-## 2. 라우팅
-> 프로젝트 폴더 내 `about` 폴더 생성 후 내부에 `index.html` 생성.
+> * 브라우저마다 기본적으로 default 스타일이 있음.
+> * 때문에 브라우저에 따라 웹 페이지 글꼴이나 배열 등이 다를 때가 있어서 통일화 필요.
 
-최상위 디렉토리 내 `index.html`에 아래 입력 후 확인해보자.
+설정하지 않은 스타일로 고민하지말고 초기화하자.
+
+## CDN 입력
+구글에 `reset.css cdn` 검색해보면 여러 개 나오는데 온라인으로 제공하는 코드를 연결해서 사용. 아무 곳에서나 `copy HTML` 같은 걸로 스타일 적용 코드 복사하자. 
+
 ```html
-<a href="./about">about</a>
+<head>
+  ...
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  ...
+</head>
+<body>
+  <div></div>
+</body>
+</html>
 ```
-
-> * 현재 프로젝트 내 `01-START` 폴더 내에서 시작해서 그렇지 루트 디렉토리(= `/`)에서 `index.html` 작성했을 시 `href` 속성 앞에 `.` 붙이는 형태의 상대 경로 설정하지 않고 절대 경로로 설정 가능.
-> * `GitHub Pages`에서는 본인 레포지토리 내에서 절대 경로 쓰면 참조가 안 됨. 그래서 배포 전에 여러 참조 디렉토리에 `.` 붙이고 배포함.
