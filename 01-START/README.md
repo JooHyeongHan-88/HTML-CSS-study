@@ -1,23 +1,22 @@
-# image
-이미지 삽입
+# routing
+하이퍼링크 걸기와 라우팅
 
-> 폴더 정리하고 `main.css`, `main.js` 파일 옮김
-```html
-<link rel="stylesheet" href="./css/main.css">
-<script src="./js/main.js"></script>
-```
-
-## 1. 이미지 태그
-`<body>` 태그 내에 `image` 입력 후 `Enter`
+## 1. 하이퍼링크
+`<body>` 태그 내에 `a` 입력 후 `Enter`
 아래 입력
 ```html
-<img src="./images/samsung.png" alt="삼성로고">
+<a href="https://naver.com">NAVER</a>
 ```
-> * `src` 속성은 이미지 소스 주소로 `http` 연결도 가능.
-> * `alt` 속성은 이미지 파일 손상 되거나 뜨지 않을 때 대체 문구로 항상 쓰는 버릇 있어야 함.
+> * `href` 속성 내에 주소 입력.
+> * 프로젝트 내부 경로로도 가능.
 
-## 2. 빈 태그
-태그 중엔 닫지 않는 태그가 존재하고 `<img>`가 대표적. 안 해도 상관 없으나 태그 끝났단 의미로 아래와 같이 마지막에 `/` 넣어주는 걸 권장하기도 함.
+## 2. 라우팅
+> 프로젝트 폴더 내 `about` 폴더 생성 후 내부에 `index.html` 생성.
+
+최상위 디렉토리 내 `index.html`에 아래 입력 후 확인해보자.
 ```html
-<img src="./images/samsung.png" alt="삼성로고" />
+<a href="./about">about</a>
 ```
+
+> * 현재 프로젝트 내 `01-START` 폴더 내에서 시작해서 그렇지 루트 디렉토리(= `/`)에서 `index.html` 작성했을 시 `href` 속성 앞에 `.` 붙이는 형태의 상대 경로 설정하지 않고 절대 경로로 설정 가능.
+> * `GitHub Pages`에서는 본인 레포지토리 내에서 절대 경로 쓰면 참조가 안 됨. 그래서 배포 전에 여러 참조 디렉토리에 `.` 붙이고 배포함.
