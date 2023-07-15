@@ -1,43 +1,11 @@
-.box {
-	width: 100px;
-	height: 100px;
-	background-color: orange;
-	/* transition: 1s; */
+input {
+	display: block;
 }
 
-
-/* [1. 가상 클래스] */
-
-/* .box:hover {
-	width: 300px;
-	background-color: royalblue;
+/* [type="password"] {
+	background-color: orange;
 } */
 
-/* .box:active {
-	width: 300px;
-	background-color: royalblue;
-} */
-
-/* input:focus {
-	background: orange;
-} */
-
-
-/* [2. 가상 요소] */
-/* :: 개발자 도구로 확인해보자 */
-/* :: 인라인 요소 default */
-
-/* .box::before {
-	content: "삼성";
-} */
-
-/* .box::after {
-	content: "PS 좀..";
-} */
-
-/* .box::after {
-	content: "";
-	width: 30px;
-	height: 30px;
-	background-color: royalblue;
+/* [data-fruit-name] {
+	color: red;
 } */
