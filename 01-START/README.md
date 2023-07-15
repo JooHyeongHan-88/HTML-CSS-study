@@ -1,56 +1,23 @@
-# link
-CSS 및 JS 연결해보자.
+# image
+이미지 삽입
 
-## 1. div 태그
-`<body>` 태그 내 아래 작성하여 `Go Live`로 확인해보자.
+> 폴더 정리하고 `main.css`, `main.js` 파일 옮김
 ```html
-<body>
-  <div>Hello world!</div>
-</body>
+<link rel="stylesheet" href="./css/main.css">
+<script src="./js/main.js"></script>
 ```
 
-## 2. CSS 작성
-> 프로젝트 디렉토리 내 `main.css` 생성.
-
-아래 입력.
-```css
-div {
-  color: red;
-  font-size:  100px;
-}
-```
-하지만 아무 변환 없음.
-
-## 3. CSS 연결
-> `<head>` 태그 내에 `link` 입력 후 `Enter`
-
-아래 입력.
+## 1. 이미지 태그
+`<body>` 태그 내에 `image` 입력 후 `Enter`
+아래 입력
 ```html
-<link rel="stylesheet" href="./main.css">
+<img src="./images/samsung.png" alt="삼성로고">
 ```
-`Go Live` 확인 시 CSS 속성 변한다.
+> * `src` 속성은 이미지 소스 주소로 `http` 연결도 가능.
+> * `alt` 속성은 이미지 파일 손상 되거나 뜨지 않을 때 대체 문구로 항상 쓰는 버릇 있어야 함.
 
-> 외부 파일 연결하지 않고 `<head>` 태그 내에 `<style>` 태그 작성하여 CSS 스타일 코드 적용 가능.
-
-## 4. JS 연결
-> 프로젝트 디렉토리 내 `main.js` 생성.
-
-아래 입력.
-```javascript
-console.log('삼성 파운드리!');
-```
-
-`<head>` 태그 내에 아래 입력.
+## 2. 빈 태그
+태그 중엔 닫지 않는 태그가 존재하고 `<img>`가 대표적. 안 해도 상관 없으나 태그 끝났단 의미로 아래와 같이 마지막에 `/` 넣어주는 걸 권장하기도 함.
 ```html
-<link rel="stylesheet" href="./main.css">
+<img src="./images/samsung.png" alt="삼성로고" />
 ```
-
-`Go Live` 웹 페이지에서 `개발자 도구` 들어 간다.
-
-> `ctrl + i` 혹은 `F12`
-
-`콘솔`에 들어가면 `삼성 파운드리!` 적혀있음.
-
-> * 외부 파일 연결하지 않고 `<head>` 태그 내에 `<script>` 태그 작성하여 JavaScript 코딩 가능.
-> * `</body>` 태그 아래에도 `<script>` 태그 작성 가능.
-> * 브라우저 파싱 및 해석이 코드 Top Down이라 아래에 보통 작성.
