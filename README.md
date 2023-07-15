@@ -1,22 +1,14 @@
-# Font
-CSS 스타일 `Font`에 대해 살펴본다.
+# position
+CSS 스타일 `position`에 대해 살펴본다.
 
 ## 참고
 `reference3.pdf`
 
-## 구글 폰트 적용
-
-구글 폰트 적용해보자.
-
-> https://fonts.google.com/
-
-1. 원하는 글꼴 선택 후 `Select {weight} +`로 사용하고 싶은 굵기 선택하자.
-2. 우측 사이드 바에 `Use on the web` 메뉴에서 `<link>` 선택하여 코드 복사.
-3. `index.html` 내부 `<head>` 태그에 붙여넣기.
-4. 사용하고 싶은 선택자에 폰트 적용.
-
-```css
-div {
-  font-family: 'Cherry Swash', 'Nanum Gothic', sans-serif;
-}
-```
+> `position`은 요소를 위치시킬 **기준**을 지정하는 요소로
+> 1. 기본적으로 `<body>`를 기준으로 하고,
+> 2. 모든 요소는 `static` 값( 기준 없음 )이 default임.
+> 3. `relative`는 요소 **자기 자신**을 기준으로 하는 값으로,
+> 4. 이를 적용하면 구조적 자손들이 자신을 `poistion`상의 부모로 받아들임.
+> 5. `absolute`는 `position` 상의 **부모**를 기준으로 하는 값.
+> 6. `fixed`는 `viewport` 상의 **부모**를 기준으로 하는 값.
+> 6. `absolute` 및 `fixed`를 적용하면 `display` 속성이 `block`으로 변경됨.

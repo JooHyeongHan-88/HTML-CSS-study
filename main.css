@@ -1,7 +1,59 @@
-/* .nanum {
-	font-family: 'Nanum Gothic', sans-serif;
+.wrap {
+	width: 700px;
+	height: 400px;
+	background-color: tomato;
+	padding: 50px;
+}
+.wrap .container {
+	width: 300px;
+	background-color: royalblue;
+}
+.wrap .container .item {
+	border: 4px dashed red;
+	background-color: orange;
+}
+.wrap .container .item:nth-child(1) {
+	width: 100px;
+	height: 100px;
+}
+.wrap .container .item:nth-child(2) {
+	width: 140px;
+	height: 70px;
+}
+.wrap .container .item:nth-child(3) {
+	width: 70px;
+	height: 120px;
 }
 
-.cherry {
-	font-family: 'Cherry Swash', sans-serif;
+
+
+/* 1. relative: 자기 자신 기준으로 배치는 쓸 일 없음 */
+/* .container .item:nth-child(2) {
+	position: relative;
+	top: 30px;
+	left: 30px;
+} */
+
+/* 2. absolute: 조상 position을 relative로 할 땐? */
+/* .wrap .container .item:nth-child(2) {
+	position: absolute;
+	top: auto;
+	right: auto;
+	opacity: 0.5;
+}
+.wrap {
+	position: static;
+}
+.wrap .container {
+	position: static;
+} */
+
+/* 3. fixed */
+/* body {
+	height: 3000px;
+}
+.wrap .container .item:nth-child(2) {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
 } */
