@@ -1,11 +1,13 @@
-input {
-	display: block;
+/* 2. 강제 상속 */
+
+.parent {
+	width: 300px;
+	height: 200px;
+	background-color: red;
 }
 
-/* [type="password"] {
-	background-color: orange;
-} */
-
-/* [data-fruit-name] {
-	color: red;
-} */
+.child {
+	width: 100px;
+	height: inherit;
+	background-color: orange; /* 색상도 상속해보자 */
+}
