@@ -1,31 +1,53 @@
-div {
+body {
+	padding: 100px;
+}
+.container {
+	width: 200px;
+	height: 100px;
+	background-color: royalblue;
+}
+.container .item {
 	width: 100px;
 	height: 100px;
 	background-color: orange;
+
+	font-size: 30px;
+	font-weight: 700;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-div:hover {
-	width: 300px;
-	background-color: royalblue;
+
+/* 1. rotate */
+/* .container .item {
+	transform: rotate(45deg);
+} */
+
+/* 2. scale */
+/* .container .item {
+	transform: scale(.8);
+} */
+
+/* 3. rotate 3D (자식 기준) */
+/* .container .item {
+	transform: perspective(500px) rotateY(45deg);
+} */
+
+/* 4. rotate 3D (부모 기준) */
+/* .container {
+	perspective: 500px;
 }
-
-/* 1. transition ( =  property [all] + duration [0s] + timing-function [ease] + delay [0s]) */
-/* div {
-	transition: 1s;
+.container .item {
+	transform: rotateY(45deg);
 } */
 
-/* 2. transition-property */
-/* div {
-	transition:
-		width .3s,
-		background-color 1.5s;
-} */
-
-/* 3. transition-timing-function (easing 함수 검색해보면 많음) */
-/* div {
-	transition: 1s ease-in-out;
-} */
-
-/* 4. transition-delay */
-/* div {
-	transition: 1s .5s;
+/* 5. backface-visibility: hidden */
+/* .container .item {
+	border-radius: 30px;
+}
+.container:hover .item {
+	transition: .5s ease-in-out;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
 } */
