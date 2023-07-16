@@ -7,3 +7,58 @@
 	border: 4px dashed red;
 	background-color: orange;
 }
+
+/* 1. display: flex */
+/* .container {
+	display: flex;
+} */
+
+/* 2. flex-wrap: wrap */
+/* .container {
+	width: 400px;
+	height: 200px;
+	display: flex;
+	flex-wrap: nowrap;
+} */
+
+/* 3. justify-content: flex-start, center, flex-enter */
+/* .container {
+	width: 800px;
+	height: 200px;
+	display: flex;
+	justify-content: flex-start;
+} */
+
+/* 4. align-content: stretch, flex-start, center, flex-enter (컨테이너 전체 기준으로 여러 줄일 때만 정렬) */
+/* .container {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+} */
+
+/* 5. align-items: stretch, flex-start, center, flex-enter (컨테이너 내 row마다 정렬)*/
+/* .container {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+} */
+
+/* 6. flex-grow (flex-basis: 0)*/
+/* .container {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.container .item {
+	flex-grow: 1;
+	flex-basis: auto;
+}
+.container .item:nth-child(3) {
+	flex-grow: 2;
+} */
